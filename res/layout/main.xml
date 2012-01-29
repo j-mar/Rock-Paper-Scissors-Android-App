@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" 
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_alignParentTop="true" 
+            android:layout_alignParentLeft="true" 
+            android:id="@+id/p1" 
+            android:text="@string/player1">
+            </TextView>
+        <TextView 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:layout_alignParentTop="true" 
+            android:layout_alignParentRight="true" 
+            android:id="@+id/p2" 
+            android:text="@string/computer">
+            </TextView>
+        <Button 
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/p1" 
+            android:layout_alignParentLeft="true" 
+            android:id="@+id/button_r" 
+            android:text="@string/rock" android:layout_width="75dp">
+            </Button>
+        <Button 
+            android:layout_height="wrap_content" 
+            android:layout_alignBaseline="@+id/button_r" 
+            android:layout_alignBottom="@+id/button_r" 
+            android:layout_toRightOf="@+id/button_r" 
+            android:id="@+id/button_p" 
+            android:text="@string/paper" android:layout_width="75dp">
+            </Button>
+        <Button 
+            android:layout_height="wrap_content" 
+            android:layout_alignBaseline="@+id/button_p" 
+            android:layout_alignBottom="@+id/button_p" 
+            android:layout_toRightOf="@+id/button_p" 
+            android:id="@+id/button_s" 
+            android:text="@string/scissors" android:layout_width="75dp">
+            </Button>
+        <ImageView 
+            android:src="@drawable/select_no"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_alignBaseline="@+id/p1_weapon" 
+            android:layout_alignBottom="@+id/p1_weapon" 
+            android:layout_alignParentRight="true" 
+            android:id="@+id/p2_weapon" 
+            android:shadowColor="#FFFFFF"
+		    android:shadowDx="0"
+		    android:shadowDy="0"
+		    android:shadowRadius="100">
+            </ImageView>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:id="@+id/button_next" android:text="@string/next_round"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:id="@+id/button_reset" android:text="@string/reset"></Button>
+        <ImageView android:src="@drawable/select_no" android:layout_height="wrap_content" android:id="@+id/p1_weapon" android:layout_width="wrap_content" android:layout_below="@+id/button_r" android:layout_alignParentLeft="true" android:shadowColor="#FFFFFF"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="100" ></ImageView>
+        <TextView android:id="@+id/score_p2" android:text="@string/zero" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/score" android:layout_alignParentRight="true"></TextView>
+        <View android:id="@+id/view2" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#FFFFFF" android:layout_below="@+id/score_p1" android:layout_alignParentLeft="true"></View>
+        <TextView android:id="@+id/winner" android:text="@string/unknown_result" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true"></TextView>
+        <View android:id="@+id/view1" android:layout_height="1dip" android:layout_width="fill_parent" android:background="#FFFFFF" android:layout_above="@+id/score_p1" android:layout_alignParentLeft="true"></View>
+        <TextView android:id="@+id/score" android:text="@string/scores" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/winner" android:layout_centerHorizontal="true" android:layout_marginTop="20dp"></TextView>
+        <TextView android:id="@+id/score_p1" android:text="@string/zero" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@+id/score" android:layout_alignBottom="@+id/score" android:layout_alignParentLeft="true"></TextView>
+    </RelativeLayout>
+    

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="scissors">Scissors</string>
+    <string name="no_weapon">No Weapon Selected</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="computer">Computer</string>
+    <string name="weapon_selected">WEAPON SELECTED</string>
+    <string name="tie">Tie</string>
+    <string name="p1_win">Player 1 Wins</string>
+    <string name="comp_win">Computer Wins</string>
+    <string name="p2_win">Player 2 Wins</string>
+    <string name="unknown_result">Winner TBD</string>
+    <string name="three">3</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+    <string name="scores">Scores</string>
+    <string name="zero">0</string>
+    <string name="next_round">Next Round</string>
+    <string name="reset">Reset</string>
+    <string-array name="weapons">
+        <item>Rock</item>
+        <item>Paper</item>
+        <item>Scissors</item>
+    </string-array>
+</resources>
